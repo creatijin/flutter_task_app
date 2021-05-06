@@ -19,7 +19,6 @@ class ScreenC extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  // Navigator.pop(context);
                   Navigator.pop(context);
                 },
                 child: Text('뒤로가기'))

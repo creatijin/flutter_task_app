@@ -46,6 +46,19 @@ Dart 공식문서 내용 -  https://dart.dev/guides/language/effective-dart/styl
 
 
 
+## Widget catalog
+
+플루터 공식으로 지원하는 위젯의 종류를 확인할 수 있다.
+영상으로 소개도 제공하고 예제도 당연히 제공해주고 있다.
+
+플루터 위젯 - https://flutter.dev/docs/development/ui/widgets
+
+
+
+플루터 디자인을 보고 자주쓰는 컴포넌트를 묶어서 재사용하는게 수고가 덜하다.
+
+
+
 ## 플루터 과제와 연습
 
 - [flutter_router_task](https://github.com/creatijin/flutter_task_app/tree/master/flutter_router_task)
@@ -55,5 +68,12 @@ Dart 공식문서 내용 -  https://dart.dev/guides/language/effective-dart/styl
   ```dart
   Navigator.pushNamed(context, "/a"),
   Navigator.pop(context),
-  Navigator.of(context).pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
+  Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
   ```
+
+회원가입 입력 폼 5가지
+
+이름 비밀번호 이메일 전화번호 주소
+
+커스텀 컴포넌트로 제작
+

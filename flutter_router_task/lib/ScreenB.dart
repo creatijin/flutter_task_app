@@ -6,31 +6,27 @@ class ScreenB extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('회원가입 페이지')),
       body: Center(
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-            Row(
+          child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                ElevatedButton(
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+              ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamedAndRemoveUntil(
-                      '/', (Route<dynamic> route) => false);
+                    Navigator.of(context)
+                        .pushNamedAndRemoveUntil('/', (route) => false);
+                    // Navigator.of(context).popUntil((route) => false);
                   },
-                  child: Text('회원가입')
-                ),
-                SizedBox(width: 20.0),
-                ElevatedButton(
-                  onPressed: () => {
-                    // Navigator.of(context).pushNamedAndRemoveUntil('/c', (Route<dynamic> route) => false)
-                    Navigator.pushNamed(context, '/c')
-                  },
-                  child: Text('이용약관'),
-                )
-              ]
-            ),
-        ])
-      ),
+                  child: Text('회원가입')),
+              SizedBox(width: 20.0),
+              ElevatedButton(
+                onPressed: () => {
+                  // Navigator.of(context).pushNamedAndRemoveUntil('/c', (Route<dynamic> route) => false)
+                  Navigator.pushNamed(context, '/c')
+                },
+                child: Text('이용약관'),
+              )
+            ]),
+          ])),
     );
   }
 }
